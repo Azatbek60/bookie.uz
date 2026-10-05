@@ -1,0 +1,105 @@
+h2 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #4a3b5c;
+}
+
+.control {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #4a3b5c;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+
+.control_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #4a3b5c;
+    font-size: 20px;
+    border: 1px solid #4a3b5c98;
+    max-width: 650px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.control_container h3 {
+    padding-right: 15px;
+    border-right: 2px solid #ddd;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.control_container h3:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.controls {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #4a3b5c98;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+
+.bos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: #4a3b5c;
+    font-size: 20px;
+    border-bottom: 1px solid #4a3b5c98;
+}
+
+.bos img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+.delate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+}
+
+.buy {
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    gap: 10px;
+    width: 130px;
+    height: 40px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sell {
+    background-color: rgba(245, 3, 3, 0.589);
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    height: 40px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

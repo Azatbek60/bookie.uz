@@ -1,0 +1,372 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/home/card.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<html>
+
+<body>
+
+    <header class="header">
+
+        <div class="container head_con">
+            <div class="head_left">
+                <img src="/head.logo.png" alt="Logo">
+            </div>
+            <div class="head_cenret">
+                <input type="text" placeholder="Find the book you are looking for">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="head_right">
+                <a href="#">Log In</a>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <nav class="nav-menu">
+            <button onclick="loadPage('/home/home.html', this)" class="nav-btn active">Home</button>
+            <button onclick="loadPage('/bestseller/bestseller.html', this)" class="nav-btn">Bestseller</button>
+            <button onclick="loadPage('/category/category.html', this)" class="nav-btn">Category</button>
+            <button onclick="loadPage('/community/community.html', this)" class="nav-btn">Community</button>
+        </nav>
+
+        <main id="main-content">
+            <section class="card_secction_1">
+                <h2>Home/ <span>Recomandations</span></h2>
+
+                <div class="detailed">
+                    <div class="img_div">
+                        <img src="/photos/card-photo.png" alt="">
+                    </div>
+                    <div class="img_detailed">
+                        <h4>Kitob nome: <span>Bintang</span></h4>
+                        <h4>Muallif: <span>Notion Paul</span></h4>
+                        <h4>Kategoriya: <span>Biznes</span></h4>
+                        <h4>Narxi: 600 000 UZS</h4>
+                        <div class="sharx">
+                            <div class="stars">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star-white.png" alt="">
+                            </div>
+                            <h4>1600 sharhlar</h4>
+                        </div>
+                        <div class="detailed_p">
+                            <p>Integer amet faucibus imperdiet mauris ultrices ut metus elementum. Vitae nulla sapien
+                                sed
+                                eget vel
+                                purus
+                                sed. Cursus feugiat sit pretium auctor a sed. Habitant lacus pellentesque id convallis
+                                ultricies
+                                luctus.
+                                Ullamcorper amet odio ut semper. Aliquam lacus sit morbi aenean ornare adipiscing purus
+                                suscipit
+                                orci.
+                                Non
+                                ac ac consequat dolor quam. Velit nulla ut nibh ornare massa venenatis. <br>
+                                Elementum ac facilisi massa nulla in lorem. Odio erat amet blandit senectus. Gravida
+                                odio
+                                nisl
+                                nullam
+                                egestas. Vel cursus.
+                            </p>
+                        </div>
+                        <div class="btns">
+                            <button class="btn1"><i class="fa-light fa-cart-shopping"
+                                    style="color: rgb(255, 255, 255);"></i> Add to
+                                card</button>
+                            <button><img src="/home/photo/share.png" alt="">Ulashish</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card_section_2">
+                <div class="card_section_2_container">
+                    <div class="audiobook">
+                        <h2>Audiobook</h2>
+                    </div>
+                    <div class="sec_2_audio" id="main-audio-title">AUDIO</div>
+                    <div class="sec_2_audio_">
+                        <audio id="main-audio-player" controls src="../Y2Mate.is - TARA202 - .mp3"></audio>
+                    </div>
+                </div>
+
+
+                <div class="track-list">
+                    <!-- 1-muzika -->
+                    <div class="music" data-src="../1-muzika.mp3" data-title="TARA 202">
+                        <span>1. TARA202 - Магистрали</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 2-muzika -->
+                    <div class="music" data-src="../2-muzika.mp3" data-title=" KHALIF-МАЛЬВИНА SOUNDAURA">
+                        <span>2. KHALIF-МАЛЬВИНА SOUNDAURA</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 3-muzika -->
+                    <div class="music" data-src="../3-muzika.mp3" data-title="Qiyal Darian - Ne kerek">
+                        <span>3. Qiyal Darian - Ne kerek</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 4-muzika -->
+                    <div class="music" data-src="../4-muzika.mp3" data-title="RaiM - Шер">
+                        <span>4. RaiM - Шер</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 5-muzika -->
+                    <div class="music" data-src="../5-muzika.mp3" data-title="Залитай Залитай Со мной 🙎🫀">
+                        <span>5. Залитай Залитай Со мной 🙎🫀</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 6-muzika -->
+                    <div class="music" data-src="../6-muzika.mp3" data-title="Мирас Жугунусов - Uaqyt">
+                        <span>6. Мирас Жугунусов - Uaqyt</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 7-muzika -->
+                    <div class="music" data-src="../7-muzika.mp3" data-title="САҒАН ЖІПСІЗ БАЙЛАНҒАМ (Ошол күнү)">
+                        <span>7. САҒАН ЖІПСІЗ БАЙЛАНҒАМ (Ошол күнү)</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 8-muzika -->
+                    <div class="music" data-src="../8-muzika.mp3" data-title="Settlers — Светлое чувство (Live)">
+                        <span>8. Settlers — Светлое чувство (Live)</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 9-muzika -->
+                    <div class="music" data-src="../9-muzika.mp3" data-title="Sabi Mia Boyka Song">
+                        <span>9. Sabi Mia Boyka Song</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+
+                    <!-- 10-muzika -->
+                    <div class="music musik10" data-src="../10-muzika.mp3"
+                        data-title="Сенин козин тупсиз терен. Рахман гитарист">
+
+                        <span>10. Сенин козин тупсиз терен. Рахман гитарист</span>
+                        <button class="play-btn">Play</button>
+                    </div>
+                </div>
+            </section>
+            <section class="card_section_3">
+                <div class="card_section_3_container">
+                    <div class="two">
+                        <h2>Sharhlar</h2>
+                        <h2>Kitob haqida</h2>
+                    </div>
+                    <div class="comentars_container">
+                        <div class="baholar">
+                            <p>4.6</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                                <i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i>
+                            </div>
+                            <div class="cifr">
+                                <div class="reaction">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>1,235</p>
+                                </div>
+                                <div class="reaction">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>1,235</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="massage_container">
+                            <div class="massage">
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="massages">
+                                    <div class="gap">
+                                        <h2>A</h2>
+                                        <p>Matn yozing</p>
+                                    </div>
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </div>
+                            </div>
+                            <div class="izoh">
+                                <div class="izoh_a">
+                                    <h2>A</h2>
+                                    <div class="izoh_text">
+                                        <h3>Adulaziz Abdinazarov</h3>
+                                        <p class="yil">08.12.2022</p>
+                                        <p>Dignissim neque volutpat in est viverra eleifend ultricies <br> tortor. Purus
+                                            morbi ut
+                                            consectetur risus ullamcorper nec <br> arcu neque.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="izoh">
+                                <div class="izoh_a">
+                                    <h2>A</h2>
+                                    <div class="izoh_text">
+                                        <h3>Adulaziz Abdinazarov</h3>
+                                        <p class="yil">08.12.2022</p>
+                                        <p>Dignissim neque volutpat in est viverra eleifend ultricies <br> tortor. Purus
+                                            morbi ut
+                                            consectetur risus ullamcorper nec <br> arcu neque.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="izoh">
+                                <div class="izoh_a">
+                                    <h2>A</h2>
+                                    <div class="izoh_text">
+                                        <h3>Adulaziz Abdinazarov</h3>
+                                        <p class="yil">08.12.2022</p>
+                                        <p>Dignissim neque volutpat in est viverra eleifend ultricies <br> tortor. Purus
+                                            morbi ut
+                                            consectetur risus ullamcorper nec <br> arcu neque.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="izoh fall">
+                                <div class="izoh_a">
+                                    <h2>A</h2>
+                                    <div class="izoh_text">
+                                        <h3>Adulaziz Abdinazarov</h3>
+                                        <p class="yil">08.12.2022</p>
+                                        <p>Dignissim neque volutpat in est viverra eleifend ultricies <br> tortor. Purus
+                                            morbi ut
+                                            consectetur risus ullamcorper nec <br> arcu neque.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="fottr">
+                <div class="fottr_detailed">
+                    <div class="fottr_img_div">
+                        <img src="/photos/card-photo.png" alt="">
+                    </div>
+                    <div class="fottr_img_detailed">
+                        <h4>Kitob nome: <span>Bintang</span></h4>
+                        <h4>Muallif: <span>Notion Paul</span></h4>
+                        <h4>Kategoriya: <span>Biznes</span></h4>
+                        <div class="sharx">
+                            <div class="stars">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star-white.png" alt="">
+                            </div>
+                            <h4>1600 sharhlar</h4>
+                        </div>
+                        <div class="detailed_p">
+                            <p>Integer amet faucibus imperdiet mauris ultrices ut metus elementum. Vitae
+                            </p>
+                        </div>
+                          <div class="falls">
+                            <p>Batafsil</p>
+                            <i class="fa-light fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="fottr_detailed">
+                    <div class="fottr_img_div">
+                        <img src="/photos/card-photo.png" alt="">
+                    </div>
+                    <div class="fottr_img_detailed">
+                        <h4>Kitob nome: <span>Bintang</span></h4>
+                        <h4>Muallif: <span>Notion Paul</span></h4>
+                        <h4>Kategoriya: <span>Biznes</span></h4>
+                        <div class="sharx">
+                            <div class="stars">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star.png" alt="">
+                                <img src="/photos/star-white.png" alt="">
+                            </div>
+                            <h4>1600 sharhlar</h4>
+                        </div>
+                        <div class="detailed_p">
+                            <p>Integer amet faucibus imperdiet mauris ultrices ut metus elementum. Vitae
+                            </p>
+                        </div>
+                        <div class="falls">
+                            <p>Batafsil</p>
+                            <i class="fa-light fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_div">
+                    <div class="footer_head">
+                        <div class="footer_texts">
+                            <h1>Review<span>Book</span></h1>
+                            <p>Is the best place to review book</p>
+                        </div>
+                    </div>
+                    <div class="footer_nav">
+                        <div class="footer_texts">
+                            <h3>Navigation</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="">Bestseller</a></li>
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_contact">
+                        <div class="footer_texts">
+                            <h3>Company</h3>
+                            <a href="">admin@reviewbook.com</a>
+                            <a href="">Jln. Stiabuthi No. 193 </a>
+                            <a href="">Bandung Indonesia</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foter_foter">
+                    <p>© 2021 ReviewBook. All rights reserved.</p>
+                    <div class="foter_icon">
+                        <div class="i">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="i">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </div>
+    </footer>
+</body>
+<script src="../script.js"></script>
+<script src="./card.js"></script>
+
+</html>

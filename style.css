@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer_head .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.head_con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Merriweather", serif;
+    padding: 0px 20px;
+}
+
+.head_left img {
+    width: 93px;
+    height: 60px;
+}
+
+.head_cenret {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #F8F7F5;
+}
+
+.head_cenret input {
+    width: 500px;
+    padding: 20px;
+    height: 50px;
+    border-radius: 4px 0px 0px 4px;
+    border: 0px;
+    background: #F8F7F5;
+    color: #463C7480;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+}
+
+.head_cenret input:focus {
+    outline: none;
+}
+
+.head_cenret input::placeholder {
+    color: #463C7480;
+    font-size: 20px;
+}
+
+.head_cenret button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #F8F7F5;
+    border-radius: 0px 4px 4px 0px;
+    color: #463C7480;
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+}
+
+.head_right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.head_right a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.head_right a:nth-child(1) {
+    color: #463C74;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+.head_right a:nth-child(2) {
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #B4D51E;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: #463C7480;
+    padding: 7px 5px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-btn.active {
+    color: #463C74;
+    font-weight: 600;
+}
+
+.nav-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #B4D51E;
+    border-radius: 2px;
+}
+
+#main-content {
+    margin-top: 10px;
+}
+
+
+.footer {
+    background-color: #FBF4E2;
+}
+
+.footer_div {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+}
+
+.footer_texts {
+    color: #828282;
+}
+
+.footer_texts p {
+    font-size: 20px;
+
+}
+
+.footer_head h1 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #463C74;
+    font-family: 'McLaren', cursive, sans-serif;
+}
+
+.footer_head h1 span {
+    color: #B4D51E;
+}
+
+.footer_texts h3 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000e1;
+    margin-bottom: 20px;
+}
+
+.footer_nav ul {
+    list-style: none;
+    gap: 5px;
+}
+
+.footer_nav li {
+    margin-bottom: 13px;
+}
+
+.footer_nav li a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 19px;
+    font-weight: 100;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_texts a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_contact .footer_texts {
+    display: grid;
+    gap: 10px;
+}
+
+.foter_foter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 20px 30px;
+    color: #828282;
+}
+
+.foter_foter p {
+    font-size: 18px;
+}
+
+.foter_icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.foter_icon .i {
+    cursor: pointer;
+    background-color: #B4D51E;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foter_icon i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #ffffff;
+}

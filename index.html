@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookie.uz</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container head_con">
+            <div class="head_left">
+                <img src="./head.logo.png" alt="Logo">
+            </div>
+            <div class="head_cenret">
+                <input type="text" placeholder="Find the book you are looking for">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="head_right">
+                <a href="/registration/log.in/log_in.html">Log In</a>
+                <a href="/registration/sign.in/sign_in.html">Sign In</a>
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <nav class="nav-menu">
+            <button onclick="loadPage('home/home.html', this)" class="nav-btn active">Home</button>
+            <button onclick="loadPage('bestseller/bestseller.html', this)" class="nav-btn">Bestseller</button>
+            <button onclick="loadPage('category/category.html', this)" class="nav-btn">Category</button>
+            <button onclick="loadPage('community/community.html', this)" class="nav-btn">Community</button>
+        </nav>
+
+        <main id="main-content">
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer_div">
+                    <div class="footer_head">
+                        <div class="footer_texts">
+                            <h1>Review<span>Book</span></h1>
+                            <p>Is the best place to review book</p>
+                        </div>
+                    </div>
+                    <div class="footer_nav">
+                        <div class="footer_texts">
+                            <h3>Navigation</h3>
+                            <ul>
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="">Bestseller</a></li>
+                                <li><a href="">Category</a></li>
+                                <li><a href="">Community</a></li>
+                                <li><a href="">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer_contact">
+                        <div class="footer_texts">
+                            <h3>Company</h3>
+                            <a href="">admin@reviewbook.com</a>
+                            <a href="">Jln. Stiabuthi No. 193 </a>
+                            <a href="">Bandung Indonesia</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foter_foter">
+                    <p>© 2021 ReviewBook. All rights reserved.</p>
+                    <div class="foter_icon">
+                        <div class="i">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="i">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
